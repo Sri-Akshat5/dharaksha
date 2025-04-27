@@ -7,7 +7,7 @@ import sustain from '../../assets/sustain.jpeg';
 
 function Home() {
   return (
-    <div className="relative w-full overflow-hidden max-h-[565px] pt-20">
+    <div className="relative w-full overflow-hidden max-h-[565px] sm:max-h-[700px] pt-10 sm:pt-20">
       {/* Background Image */}
       <img
         src={homeimg}
@@ -16,9 +16,9 @@ function Home() {
       />
 
       {/* Dark Overlay + Centered Text */}
-      <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center px-4">
+      <div className="absolute inset-0 sm:flex-row bg-black/60 flex flex-col items-center justify-center px-4">
         
-        <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-4 sm:space-y-0 items-center">
+        <div className="sm:flex-row flex flex-col  sm:space-x-2 space-y-4 sm:space-y-0 items-center">
           {/* GREENER */}
           <div className="relative group">
             <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold text-center transition-opacity duration-500 group-hover:opacity-30">
@@ -66,7 +66,7 @@ function Home() {
       <img
         src={border}
         alt="Border Top"
-        className="absolute top-20 left-0 w-full pointer-events-none"
+        className="absolute top-16 sm:top-20 left-0 w-full pointer-events-none"
       />
       <img
         src={border}
