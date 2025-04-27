@@ -16,48 +16,48 @@ function Home() {
       />
 
       {/* Dark Overlay + Centered Text */}
-      <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center px-4">
         
-        <div className="flex space-x-2">
+        <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-4 sm:space-y-0 items-center">
           {/* GREENER */}
           <div className="relative group">
-            <h1 className="text-white text-4xl  font-bold md:text-6xl text-center transition-opacity duration-500 group-hover:opacity-30">
+            <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold text-center transition-opacity duration-500 group-hover:opacity-30">
               GREENER,
             </h1>
             <img
               src={greener}
               alt="Leaf"
-              className="absolute inset-0  m-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              className="absolute inset-0 m-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-[80%] max-h-[80%]"
             />
           </div>
 
           {/* CLEANER */}
           <div className="relative group">
-            <h1 className="text-white text-4xl font-bold md:text-6xl text-center transition-opacity duration-500 group-hover:opacity-30">
+            <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold text-center transition-opacity duration-500 group-hover:opacity-30">
               CLEANER,
             </h1>
             <img
               src={clean}
               alt="Leaf"
-              className="absolute inset-0  m-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              className="absolute inset-0 m-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-[80%] max-h-[80%]"
             />
           </div>
 
           {/* SUSTAINABLE */}
-          <div className="relative group ">
-            <h1 className="text-white text-4xl font-bold md:text-6xl text-center transition-opacity duration-500 group-hover:opacity-30">
+          <div className="relative group">
+            <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold text-center transition-opacity duration-500 group-hover:opacity-30">
               SUSTAINABLE
             </h1>
             <img
               src={sustain}
               alt="Leaf"
-              className="absolute inset-0  m-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              className="absolute inset-0 m-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-[80%] max-h-[80%]"
             />
           </div>
         </div>
 
         {/* Subtitle */}
-        <h3 className="text-white text-2xl py-10 text-center px-4 hover:text-4xl">
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl py-6 sm:py-10 text-center hover:scale-105 transition-all duration-500">
           Home-grown, organic and biodegradable packaging material
         </h3>
       </div>

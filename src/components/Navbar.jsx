@@ -11,14 +11,14 @@ const items = [
 
 function Navbar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 h-20 flex items-center justify-between px-8 py-5 bg-white ">
+    <div className="fixed top-0 left-0 right-0 z-50 h-20 flex items-center justify-between px-4 md:px-8 py-5 bg-white">
       {/* Logo Section */}
       <div className="flex items-center">
-        <img src={Logo} alt="Logo" className="h-10 w-auto" />
+        <img src={Logo} alt="Logo" className="h-8 md:h-10 w-auto" />
       </div>
 
       {/* Tagline Section */}
-      <div className="flex items-center text-black hover:text-green-400 transition-colors duration-700">
+      <div className="hidden md:flex items-center text-sm md:text-base text-black hover:text-green-400 transition-colors duration-700 text-center">
         "पर्यावरण की रक्षा, दुनियां की सुरक्षा।"
       </div>
 
