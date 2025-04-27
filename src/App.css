@@ -1,0 +1,100 @@
+
+    .about-wrapper {
+        width: 100%;
+        padding: 3rem 1.5rem;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .about-container {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+      
+      @media (min-width: 768px) {
+        .about-container {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+      
+      .about-text {
+        flex: 1;
+        position: relative;
+      }
+      
+      .about-text h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #2d3748;
+        margin-bottom: 1.5rem;
+      }
+      
+      .about-text p {
+        font-size: 1.125rem;
+        color: #4a5568;
+        text-align: justify;
+        margin-bottom: 2rem;
+        line-height: 1.7;
+      }
+      
+      .button-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .rotating-circle {
+        position: absolute;
+        left: 20%;
+        width: 80%;
+       
+        transform: translate(-50%, -50%);
+        animation: spin 15s linear infinite;
+        pointer-events: none;
+        z-index: 0;
+      }
+      
+      .learn-more-button {
+        position: relative;
+        padding: 0.75rem 2rem;
+        background-color: #4c9c2e;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+      }
+      
+      .learn-more-button:hover {
+        background-color: #3b7d22;
+      }
+      
+      .about-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .about-image img {
+        width: 24rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: transform 0.5s ease;
+      }
+      
+      .about-image img:hover {
+        transform: scale(1.05);
+      }
+      
+      /* Rotate Animation */
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+      
+
+      
