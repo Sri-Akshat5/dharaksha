@@ -20,9 +20,12 @@ function App() {
 </div>
 
      <div>
-     <section id="home">
+     
+      <section id="home" >
       <Home/>
       </section>
+     
+     
       <About/>
       <Products/>
       <Client/>
