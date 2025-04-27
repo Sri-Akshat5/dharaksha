@@ -65,7 +65,7 @@ function Home() {
       <img
         src={border}
         alt="Border Top"
-        className="absolute top-8 sm:pt-50 left-0 w-full pointer-events-none"
+        className="absolute top-16 left-0 w-full pointer-events-none"
       />
       <img
         src={border}
